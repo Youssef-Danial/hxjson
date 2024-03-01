@@ -1,4 +1,6 @@
 <h1>hxjson</h1>
+
+**This maybe XSS vulnerable if used with untrusted api or unsantized HTML until coming with a way to handle tbia issue take notice**
 is very light and easy to use
 <h2>How to use it</h2>
 <p>
