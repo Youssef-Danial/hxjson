@@ -40,12 +40,12 @@ is very light and easy to use
     </button>
     <div class="response">
       <div>
-        <p jsondata="1.0.name.first" unsafe>i am first name</p>
+        <p jsondata="1.0.name.first">i am first name</p>
         <p jsondata="1.0.name.last">i am last name</p>
         <p jsondata="1.0.place">i am place</p>
       </div>
       <div>
-        <p jsondata="1.1.name.first">i am first name</p>
+        <p jsondata="1.1.name.first" unsafe>i am first name</p>
         <p jsondata="1.1.name.last">i am last name</p>
         <p jsondata="1.1.place">i am place</p>
       </div>
