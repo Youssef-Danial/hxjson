@@ -19,7 +19,7 @@ is very light and easy to use
       },
       {
          "name":{
-            "first":"<script>alert(document.domain)</script>",
+            "first":"<h1>Mich</h1>",
             "last":"tomas"
          },
          "place":"Cairo"
