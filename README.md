@@ -12,14 +12,14 @@ is very light and easy to use
    "1":[
       {
          "name":{
-            "first":"<script>alert(document.domain)</script>",
+            "first":"joe",
             "last":"dany"
          },
          "place":"Asyut"
       },
       {
          "name":{
-            "first":"Mich",
+            "first":"<script>alert(document.domain)</script>",
             "last":"tomas"
          },
          "place":"Cairo"
