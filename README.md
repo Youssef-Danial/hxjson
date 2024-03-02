@@ -1,7 +1,6 @@
 <h1>hxjson</h1>
 
-**This maybe XSS vulnerable if used with untrusted api or unsantized HTML until coming with a way to handle this issue take Notice**
-
+**This may be XSS vulnerable if used with untrusted API or unsanitized HTML until I find an efficient way to handle this issue take Notice and use `unsafe` attribute in your tag if you are using untrusted API or unsanitized HTML**
 
 is very light and easy to use
 <h2>How to use it</h2>
@@ -13,7 +12,7 @@ is very light and easy to use
    "1":[
       {
          "name":{
-            "first":"joe",
+            "first":"<script>alert(document.domain)</script>",
             "last":"dany"
          },
          "place":"Asyut"
@@ -41,7 +40,7 @@ is very light and easy to use
     </button>
     <div class="response">
       <div>
-        <p jsondata="1.0.name.first">i am first name</p>
+        <p jsondata="1.0.name.first" unsafe>i am first name</p>
         <p jsondata="1.0.name.last">i am last name</p>
         <p jsondata="1.0.place">i am place</p>
       </div>
