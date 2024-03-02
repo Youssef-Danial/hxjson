@@ -1,6 +1,6 @@
 <h1>hxjson</h1>
 
-**This may be XSS vulnerable if used with untrusted API or unsanitized HTML until I find an efficient way to handle this issue take Notice and use `unsafe` attribute in your tag if you are using untrusted API or unsanitized HTML**
+**This may be XSS vulnerable if used with untrusted API or unsanitized HTML until I find an efficient way to handle this issue take Notice and use `safe` attribute in your tag if you trust the data**
 
 is very light and easy to use
 <h2>How to use it</h2>
@@ -45,7 +45,7 @@ is very light and easy to use
         <p jsondata="1.0.place">i am place</p>
       </div>
       <div>
-        <p jsondata="1.1.name.first" unsafe>i am first name</p>
+        <p jsondata="1.1.name.first" safe>i am first name</p>
         <p jsondata="1.1.name.last">i am last name</p>
         <p jsondata="1.1.place">i am place</p>
       </div>
