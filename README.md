@@ -1,6 +1,6 @@
 <h1>hxjson</h1>
 
-**This may be XSS vulnerable if used with untrusted API or unsanitized HTML until I find an efficient way to handle this issue take Notice and use `safe` attribute in your tag if you trust the data**
+**This may be XSS vulnerable if used with untrusted API or unsanitized HTML until I find an efficient way to handle this issue take Notice and use `safe` attribute in your tag if you trust the response data**
 
 is very light and easy to use
 <h2>How to use it</h2>
@@ -19,7 +19,7 @@ is very light and easy to use
       },
       {
          "name":{
-            "first":"<h1>Mich</h1>",
+            "first":"<script>alert('Hi')</script>",
             "last":"tomas"
          },
          "place":"Cairo"
