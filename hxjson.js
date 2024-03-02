@@ -14,11 +14,16 @@ document.addEventListener("htmx:afterRequest", function (e) {
     response_data = JSON.parse(e.detail.xhr.response);
     var jsondata_list = e.detail.target.querySelectorAll("[jsondata]");
     for (const element of jsondata_list) {
-      if (element.hasAttribute("unsafe")) {
-        element.textContent = access_object(response_data, element.attributes.jsondata.nodeValue)
+      if (element.hasAttribute("safe")) {
+        element.innerHTML = access_object(
+          response_data,
+          element.attributes.jsondata.nodeValue
+        );
       } else {
-        element.innerHTML =
-          access_object(response_data, element.attributes.jsondata.nodeValue)
+        element.textContent = access_object(
+          response_data,
+          element.attributes.jsondata.nodeValue
+        );
       }
     }
   }
